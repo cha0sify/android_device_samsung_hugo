@@ -1,0 +1,24 @@
+# Filesystem table for volume daemon
+# Jonathan Grundmann, androthan<at>gmail.com
+#
+# Configuration file gets executed by vold
+#
+#######################
+## Regular device mount
+##
+## Format: dev_mount <label> <mount_point> <part> <sysfs_path1...> 
+## label        - Label for the volume
+## mount_point  - Where the volume will be mounted
+## part         - Partition # (1 based), or 'auto' for first usable partition.
+## <sysfs_path> - List of sysfs paths to source devices
+######################
+
+###HUGO_PROJECT###
+
+# Internal sdcard (eMMC)
+dev_mount sdcard /mnt/sdcard 1 /devices/platform/mmci-omap-hs.1/mmc_host/mmc0
+
+# External storage (SD-Card)
+dev_mount ext_sdcard /mnt/ext_sdcard auto /devices/platform/mmci-omap-hs.0/mmc_host/mmc1
+
+###END###

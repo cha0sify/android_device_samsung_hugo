@@ -1,0 +1,9 @@
+#
+# Board properties for Samsung YP-GI1
+#
+
+rild.libpath=/system/lib/libsec-ril-apalone.so
+rild.libargs=-d /dev/ttyS0
+ro.sf.lcd_density=240
+dalvik.vm.heapsize=64m
+
