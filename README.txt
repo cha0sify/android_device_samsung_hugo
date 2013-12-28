@@ -9,11 +9,8 @@ This guide requires that a full CyanogenMod 7 build environment is setten up on 
  2. Then follow these steps: http://www.zimbio.com/Linux/articles/ugafotvIwWk/How+build+CyanogenMod+source (Step 1-5)]
 
 1. Add the following lines to <source_path>/.repo/manifest.xml
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
   <project name="androthan/android_device_samsung_hugo" path="device/samsung/hugo" remote="github" revision="master" />
   <project name="zaclimon/android_vendor_samsung_hugo" path="vendor/samsung/hugo" remote="github" revision="master" />
-</manifest>
 
 2. Open terminal
   - cd <source_path>
@@ -40,10 +37,12 @@ delete("/tmp/boot.img");
 
 Install an open-source build
 1. Rename <source_path>/out/target/product/hugo/boot.img to normalboot.img
-2. Pack normalboot.img into a tar-file
+2. Pack this normalboot.img into a tar-file
 3. Flash this tar-file via ODIN3 to your device
 4. Reboot device into ClockworkMod (HOME + POWER + VOL+ ; release POWER when you see the Samsung logo)
 5. Do a factory reset 
 6. Mount USB storage on PC and copy your CyanogenMod-7.2 zip
 7. Unmount device from PC and install this zip-file
 8. Reboot and enjoy!
+
+//GI1

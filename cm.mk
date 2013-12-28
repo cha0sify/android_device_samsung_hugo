@@ -37,7 +37,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Add additional mounts
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.additionalmounts=/mnt/ext_sdcard \
-    gsm.version.baseband=YP-GS1 \
+    gsm.version.baseband=GI1XXLF1 \
     ro.vold.switchablepair=/mnt/sdcard,/mnt/ext_sdcard
 
 # Release name and versioning
