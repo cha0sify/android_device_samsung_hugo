@@ -10,7 +10,7 @@ This guide requires that a full CyanogenMod 7 build environment is setten up on 
 
 1. Add the following lines to <source_path>/.repo/manifest.xml
   <project name="androthan/android_device_samsung_hugo" path="device/samsung/hugo" remote="github" revision="master" />
-  <project name="zaclimon/android_vendor_samsung_hugo" path="vendor/samsung/hugo" remote="github" revision="master" />
+  <project name="zaclimon/android_vendor_samsung_hugo" path="vendor/samsung/hugo" remote="github" revision="gingerbread" />
 
 2. Open terminal
   - cd <source_path>
@@ -25,13 +25,13 @@ This guide requires that a full CyanogenMod 7 build environment is setten up on 
 9. After your build completed open your output zip and direct to META-INF/com/google/android/updater-script and replace:
 
 assert(package_extract_file("boot.img", "/tmp//dev/block/mmcblk0p5.img"),
-write_raw_image("/tmp//dev/block/mmcblk0p5.img", "/dev/block/mmcblk0p5"),
-delete("/tmp//dev/block/mmcblk0p5.img"));
+      write_raw_image("/tmp//dev/block/mmcblk0p5.img", "/dev/block/mmcblk0p5"),
+      delete("/tmp//dev/block/mmcblk0p5.img"));
 
 through:
-package_extract_file("boot.img", "/tmp/boot.img");
-write_raw_image("/tmp/boot.img", "/dev/block/mmcblk0p5");
-delete("/tmp/boot.img");
+assert(package_extract_file("boot.img", "/tmp/boot.img"),
+      write_raw_image("/tmp/boot.img", "/dev/block/mmcblk0p5"),
+      delete("/tmp/boot.img"));
 
 10. Save 
 
