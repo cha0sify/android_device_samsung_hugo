@@ -55,9 +55,6 @@ on post-fs
 
 # create basic filesystem structure
     mkdir /data/misc/radio 0771 radio radio
-# create softap for TI SoftAP. 2010/12/07 CHKIM   
-    mkdir /data/misc/softap 0770 wifi wifi
-    mkdir /data/misc/dhcp 0777 dhcp dhcp
 
 #change accelerometer permission
 	chmod 0664 /dev/accelerometer

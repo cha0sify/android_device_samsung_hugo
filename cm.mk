@@ -36,9 +36,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Add additional mounts
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.additionalmounts=/mnt/ext_sdcard \
+    ro.additionalmounts=/mnt/emmc \
     gsm.version.baseband=GI1XXLF1 \
-    ro.vold.switchablepair=/mnt/sdcard,/mnt/ext_sdcard
+    ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := SamsungGalaxyPlayer42
