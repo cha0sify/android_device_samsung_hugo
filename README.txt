@@ -22,7 +22,7 @@ This guide requires that a full CyanogenMod 7 build environment is setten up on 
   - breakfast hugo
   - brunch hugo          ### This will start your build
 
-9. After your build completed open your output zip and direct to META-INF/com/google/android/updater-script and replace:
+4. After your build completed open your output zip and direct to META-INF/com/google/android/updater-script and replace:
 
 assert(package_extract_file("boot.img", "/tmp//dev/block/mmcblk0p5.img"),
       write_raw_image("/tmp//dev/block/mmcblk0p5.img", "/dev/block/mmcblk0p5"),
@@ -33,7 +33,7 @@ assert(package_extract_file("boot.img", "/tmp/boot.img"),
       write_raw_image("/tmp/boot.img", "/dev/block/mmcblk0p5"),
       delete("/tmp/boot.img"));
 
-10. Save 
+5. Save 
 
 Install an open-source build
 1. Rename <source_path>/out/target/product/hugo/boot.img to normalboot.img
