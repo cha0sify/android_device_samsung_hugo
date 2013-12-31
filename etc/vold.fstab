@@ -15,10 +15,6 @@
 
 ###HUGO_PROJECT###
 
-# Internal sdcard (eMMC)
-dev_mount emmc /mnt/emmc 1 /devices/platform/mmci-omap-hs.1/mmc_host/mmc0
-
-# External storage (SD-Card)
 dev_mount sdcard /mnt/sdcard auto /devices/platform/mmci-omap-hs.0/mmc_host/mmc1
 
 ###END###

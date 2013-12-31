@@ -19,9 +19,6 @@ on init
 
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
-    mkdir /mnt/ext_sdcard 0000 system system
-    symlink /mnt/ext_sdcard /ext_sdcard
-
 # for debugging proposes
 setprop ro.boot.targetrc running
 

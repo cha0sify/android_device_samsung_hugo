@@ -263,7 +263,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Default=true for development builds, set by android buildsystem.
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
-    dalvik.vm.checkjni=false
+    dalvik.vm.checkjni=false \
+    ro.config.hw_quickpoweron=true \
+    persist.sys.shutdown.mode=hibernate \
+    dev.bootcomplete=0 \
+    ro.ril.power_collapse=1 \
+    pm.sleep_mode=1 \
+    ro.mot.eri.losalert.delay=1000 \
+    windowsmgr.max_events_per_sec=84 \
+    ro.max.fling_velocity=12000\
+    ro.min.fling_velocity=8000 \
+    persist.sys.purgeable_assets=1 
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
