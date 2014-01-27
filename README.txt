@@ -9,8 +9,8 @@ This guide requires that a full CyanogenMod 7 build environment is setten up on 
  2. Then follow these steps: http://www.zimbio.com/Linux/articles/ugafotvIwWk/How+build+CyanogenMod+source (Step 1-5)]
 
 1. Add the following lines to <source_path>/.repo/manifest.xml
-  <project name="androthan/android_device_samsung_hugo" path="device/samsung/hugo" remote="github" revision="master" />
-  <project name="zaclimon/android_vendor_samsung_hugo" path="vendor/samsung/hugo" remote="github" revision="gingerbread" />
+  <project name="ChaOSChriS/android_device_samsung_hugo" path="device/samsung/hugo" remote="github" revision="master" />
+  <project name="ChaOSChriS/android_vendor_samsung_hugo" path="vendor/samsung/hugo" remote="github" revision="gingerbread" />
 
 2. Open terminal
   - cd <source_path>
