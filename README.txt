@@ -44,5 +44,3 @@ Install an open-source build
 6. Mount USB storage on PC and copy your CyanogenMod-7.2 zip
 7. Unmount device from PC and install this zip-file
 8. Reboot and enjoy!
-
-//GI1
