@@ -10,7 +10,7 @@ This guide requires that a full CyanogenMod 7 build environment is setten up on 
 
 1. Add the following lines to <source_path>/.repo/manifest.xml
   <project name="ChaOS-Developement/android_device_samsung_hugo" path="device/samsung/hugo" remote="github" revision="master" />
-  <project name="ChaOS-Developement/android_vendor_samsung_hugo" path="vendor/samsung/hugo" remote="github" revision="gingerbread" />
+  <project name="ChaOS-Developement/android_vendor_samsung_hugo" path="vendor/samsung/hugo" remote="github" revision="master" />
 
 2. Open terminal
   - cd <source_path>
